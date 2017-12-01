@@ -1,0 +1,36 @@
+<resources>
+    <string name="futureUpdate">This feature will be added in a future update.</string>
+    <string name="app_name">E-ventory</string>
+    <string name="addProduct">Add Product</string>
+    <string name="searchProduct">Search Product</string>
+    <string name="notifications">Notifications</string>
+    <string name="inventory">Inventory</string>
+    <string name="shop">Pop-Up Shop</string>
+    <string name="stats">Product Statistics</string>
+    <string name="all">All</string>
+    <string name="ebay">Ebay</string>
+    <string name="etsy">Etsy</string>
+    <string name="amazon">Amazon</string>
+    <string name="confirm">Confirm Order</string>
+    <string name="prodName">Product Name</string>
+    <string name="prodDesc">Description</string>
+    <string name="vendor">Vendor</string>
+    <string name="qty">Quantity</string>
+    <string name="email">Email</string>
+    <string name="popUpShopPage">Pop-Up Shop Page</string>
+    <string name="popUpShopPageConfirm">Confirm Pop-Up Shop Order Page</string>
+    <string name="notificationsPage">Notifications Page</string>
+    <string name="price">Price</string>
+    <string name="currency">Currency</string>
+    <string name="shopify">Shopify</string>
+    <string name="confirmAdd">Confirm Add</string>
+    <string name="qtyPrompt">Quantity : </string>
+    <string name="updateInv">Update Inventory</string>
+    <string name="pref">Preferences</string>
+
+    <string-array name="sortOptions">
+        <item>Name</item>
+        <item>Price</item>
+        <item>Quantity</item>
+    </string-array>
+</resources>

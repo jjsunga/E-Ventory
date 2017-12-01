@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.example.mike.e_ventory.Activities.ConfirmPopUpShopPurchase">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/futureUpdate"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/confirmBTN"
+        android:text="@string/confirm"
+        android:textAllCaps="false"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickConfirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:id="@+id/sortOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/confirmBTN"
+        android:layout_toStartOf="@+id/confirmBTN" />
+
+    <EditText
+        android:id="@+id/email"
+        android:text="@string/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:layout_above="@+id/confirmBTN"
+        android:layout_alignParentStart="true">
+    </EditText>
+
+</RelativeLayout>

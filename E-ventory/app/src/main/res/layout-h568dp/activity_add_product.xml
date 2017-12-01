@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.example.mike.e_ventory.Activities.AddProduct">
+
+    <EditText
+        android:id="@+id/prodET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/prodTV">
+    </EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prodName"
+        android:id="@+id/prodTV"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/prodET"
+        android:layout_alignBottom="@+id/prodET"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/descET"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/priceET"
+        android:layout_alignStart="@+id/descET" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/priceET"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/qtyET"
+        android:layout_alignStart="@+id/priceET" />
+
+    <TextView
+        android:text="@string/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descET"
+        android:layout_toStartOf="@+id/priceET"
+        android:layout_marginTop="10dp"
+        android:id="@+id/priceTV"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="@string/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/qtyTV"
+        android:layout_alignBaseline="@+id/qtyET"
+        android:layout_alignBottom="@+id/qtyET"
+        android:layout_toStartOf="@+id/qtyET"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="@string/prodDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/descTV"
+        android:textSize="18sp"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/prodET"
+        android:layout_toStartOf="@+id/descET" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:id="@+id/descET"
+        android:height="150dp"
+        android:layout_below="@+id/prodET"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/prodET" />
+
+    <TextView
+        android:text="@string/vendor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vendorTV"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/vendorEtsyCB"
+        android:layout_alignBottom="@+id/vendorEtsyCB"
+        android:layout_toStartOf="@+id/qtyET" />
+
+    <CheckBox
+        android:id="@+id/vendorEtsyCB"
+        android:text="@string/etsy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/vendorEbayCB"
+        android:layout_alignBottom="@+id/vendorEbayCB"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/confirmBTN"
+        android:text="@string/confirmAdd"
+        android:textAllCaps="false"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickConfirmAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:id="@+id/vendorEbayCB"
+        android:text="@string/ebay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/qtyET"
+        android:layout_toEndOf="@+id/vendorEtsyCB"
+        android:layout_marginStart="14dp" />
+
+</RelativeLayout>

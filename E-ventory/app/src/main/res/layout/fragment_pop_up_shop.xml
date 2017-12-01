@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mike.e_ventory.Activities.Main">
+
+    <Button
+        android:id="@+id/confirmBTN"
+        android:textAllCaps="false"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickConfirm"
+        android:text="@string/confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right|bottom" />
+
+    <ListView
+        android:id="@+id/itemlist"
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        />
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchProduct"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/notifications"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        android:icon="@drawable/notification_bell"
+        android:title="@string/notifications"/>
+    <item
+        android:id="@+id/addProduct"
+        android:orderInCategory="3"
+        app:showAsAction="always"
+        android:icon="@drawable/add_symbol"
+        android:title="@string/addProduct"/>
+    <item
+        android:id="@+id/stats"
+        android:orderInCategory="4"
+        app:showAsAction="never"
+        android:title="@string/stats"/>
+    <item
+        android:id="@+id/preferences"
+        android:orderInCategory="5"
+        app:showAsAction="never"
+        android:title="@string/pref"/>
+</menu>

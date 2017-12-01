@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.example.mike.e_ventory.Activities.Preferences">
+
+    <TextView
+        android:id="@+id/Platforms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shops"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:id="@+id/EbayShopName"
+        android:layout_below="@+id/Ebay"
+        android:layout_alignStart="@+id/Ebay" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:id="@+id/EtsyShopName"
+        android:layout_below="@+id/Etsy"
+        android:layout_alignStart="@+id/Etsy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etsy Shop Name"
+        android:textSize="18sp"
+        android:id="@+id/Etsy"
+        android:layout_below="@+id/Platforms"
+        android:layout_alignStart="@+id/Platforms"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/EbayShopName"
+        android:layout_alignStart="@+id/EbayShopName"
+        android:onClick="onClick"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ebay Shop Name"
+        android:textSize="18sp"
+        android:id="@+id/Ebay"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/EtsyShopName"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
